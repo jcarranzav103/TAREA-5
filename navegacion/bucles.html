@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        #encabezado {
+            max-height: 100px;
+            width: 100%;
+            background: #C4E9E8 url(../img/Javascript.png) repeat-x;
+        }
+
+        #caja img {
+            margin-top: 2%;
+        }
+
+        #caja {
+            box-shadow: 5px rgb(159, 116, 211);
+            border: 3px rgb(207, 196, 196) solid;
+            width: 18rem;
+            min-width: 18rem;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">JavaScript</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+
+                        <!-- Inicio Ejemplos 1 -->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../navegacion/controlFlujo.html">Control flujo</a>
+                        </li>
+                        <!-- Final Ejemplos 1 -->
+
+                        <!-- Inicio Ejemplos 2 -->
+                       
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../navegacion/bucles.html">Bucles</a>
+                        </li>
+                        <!-- Final Ejemplos 2 -->
+
+                        <!-- Inicio Ejemplos 3 -->
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../navegacion/funciones.html">Funciones</a>
+                        </li>
+                        
+                        <!-- Final Ejemplos 3 -->
+
+                        <!-- Inicio Ejemplos 4 -->
+                       
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../navegacion/expresiones.html">Expresiones</a>
+                        </li>
+                        <!-- Final Ejemplos 4 -->
+
+                        <!-- Inicio Ejemplos 5 -->
+                       
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../navegacion/numerosFechas.html">Números y fechas</a>
+                        </li>
+                        <!-- Final Ejemplos 5 -->
+
+                        <!-- Inicio Ejemplos 6 -->
+                       
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../navegacion/formateoTexto.html"> Formateo</a>
+                        </li>
+                        <!-- Final Ejemplos 6 -->
+
+                        <!-- Inicio Ejemplos 7 -->
+                       
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../navegacion/colecciones.html">Colecciones</a>
+                        </li>
+                        <!-- Final Ejemplos 7 -->
+
+                        <!-- Inicio Ejemplos 8 -->
+                      
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../navegacion/dom.html">DOM Encontrar</a>
+                        </li>
+                        <!-- Final Ejemplos 8 -->
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+  <main>
+    <div class="container" style="margin-top: 2%; background-color:white;">
+
+
+        <div class="container" style="margin-top: 2%; background-color:white;">
+
+            <div id="inf-1" class="row">
+
+                <!-- Inicio Control de flujo y manejo de errores -->
+
+                <h3 class="display-6" style="border-bottom: 2px solid rgb(37, 36, 36); padding-bottom: 10px;">
+                    Bucles e iteración</h3>
+
+                <div id="encabezado" class="col-12">
+                    <img src="../img/Javascript.png" alt="" style="max-width: 100%; max-height: 100%;">
+                </div>
+                <div class="col-12">
+                    
+                </div>
+               
+            </div>
+        </div>
+
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#for">for</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#while">while</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#dowhile">do while</a>
+            </li>
+           
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane container active " id="for">
+                <div class="col-12 mt-2 px-3" style="box-shadow: 0px 5px 14px 2px rgb(0 0 0 / 50%);">
+                    <h5 id="card-info">if...else</h5>
+                    <p>La sintaxis básica de un condicional if-else en JavaScript es la siguiente:</p>
+                    <img src="../img/if-else.png" alt="" style="max-width: 100%; max-height: 100%;">
+                    <p>Por ejemplo, si quisieras imprimir un mensaje diferente dependiendo de si el usuario es mayor
+                        o
+                        menor de edad, podrías hacerlo de la siguiente manera:</p>
+                    <img src="../img/if-else - 2.png" alt="" style="max-width: 100%; max-height: 100%;">
+                    <p>En este ejemplo, se define una función miFuncion() que simplemente imprime una alerta en la
+                        pantalla. Se llama cuando el usuario hace clic en el botón. Dentro de esta función, se
+                        define
+                        una variable product con el valor de proveninente desde el input. Luego, se
+                        utiliza un condicional if-else para verificar si product es igual a 10. Si es así, se llama
+                        a la
+                        función miFuncion(). Si no, se imprime un mensaje en la pantalla indicando que la condición
+                        no
+                        se
+                        ha cumplido.</p>
+                    <img src="../img/if-else - 3.png" alt="" style="max-width: 100%; max-height: 100%;">
+
+                    <form class="row g-3" style="margin-top: 20px; margin-bottom: 20px;">
+                        <div class="form-floating mb-3">
+                            <input name="prod" type="number" class="form-control" id="floatingInput"
+                                placeholder="valor">
+                            <label for="floatingInput">Ingresa un valor numerico</label>
+                        </div>
+                        <div class="col-auto">
+                            <button id="miBoton" type="submit" class="btn btn-primary mb-3"
+                                onclick="miFuncionIfElse()">Haz
+                                clic aquí</button>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+            <!-- _________________________________________________________________ -->
+            <div class="tab-pane container fade" id="while">
+                <div class="col-12 mt-2 px-3" style="box-shadow: 0px 5px 14px 2px rgb(0 0 0 / 50%);">
+                    <h5 id="card-info">switch</h5>
+                    <p>La sintaxis básica de un condicional switch en JavaScript es la siguiente:</p>
+                    <img src="../img/switch-1.png" alt="" style="max-width: 100%; max-height: 100%;">
+                    <br>
+                    <br>
+                    <p>En resumen, el condicional switch es una estructura de control en JavaScript que permite
+                        seleccionar un bloque de código a ejecutar en función de una variable comparada con
+                        diferentes
+                        valores.</p>
+
+                    <h5>Ejemplo</h5>
+
+                    <p>Seleccionar un país, muestrea un mensaje diferente en una etiqueta p en función del país que
+                        ha
+                        seleccionado. En este caso, vamos a utilizar un condicional switch para determinar qué
+                        mensaje
+                        mostrar:</p>
+
+                    <form>
+                        <label for="pais">Selecciona tu país de origen:</label>
+                        <select id="pais" name="pais" onchange="cambiarMensaje()">
+                            <option value="1">España</option>
+                            <option value="2">Francia</option>
+                            <option value="3">Italia</option>
+                            <option value="4">Alemania</option>
+                            <option value="5">Costa Rica</option>
+                        </select>
+                    </form>
+                    <br>
+                    <h2>
+                        <p id="mensaje"></p>
+                    </h2>
+
+                    <img src="../img/switch-2.png" alt="" style="max-width: 100%; max-height: 100%;">
+                </div>
+            </div>
+            <!-- _________________________________________________________________ -->
+            <div class="tab-pane container fade" id="dowhile">
+                <div class="col-12 mt-2 px-3" style="box-shadow: 0px 5px 14px 2px rgb(0 0 0 / 50%);">
+                    <h5 id="card-info">try-catch-throw</h5>
+                    <p>La sintaxis básica de try/catch/throw en JavaScript se utiliza para manejar errores y
+                        excepciones en el código. A continuación se muestra la estructura básica de este bloque de
+                        código:</p>
+                    <img src="../img/try-catch-throw-1.png" alt="" style="max-width: 100%; max-height: 100%;">
+                    <br>
+                    <br>
+                    <p>En resumen, la sintaxis try/catch/throw es una herramienta poderosa para manejar errores y
+                        excepciones en JavaScript, permitiendo que nuestro código sea más robusto y resistente a
+                        fallos.</p>
+
+                    <h5>Ejemplo</h5>
+
+                    <p>El código tiene dos formas de ejecución:</p>
+                    <p>
+                    <ul>
+                        <li>Si responde “Sí” a “¿Cometer un error?”, Entonces try -> catch -> finally.</li>
+                        <li>Si dice “No”, entonces try -> finally.</li>
+                    </ul>
+                    </p>
+
+                    <img src="../img/try-catch-throw-2.png" alt="" style="max-width: 100%; max-height: 100%;">
+
+                    <form class="row g-2" style="margin-top: 20px; margin-bottom: 20px;">
+
+                        <div class="col-6">
+                            <button id="miBoton" type="submit" class="btn btn-primary mb-3"
+                                onclick="pruebaTry()">Haz
+                                clic aquí</button>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+            <!-- _________________________________________________________________ -->
+            <div class="tab-pane container fade" id="objetos-Error">
+                <div class="col-12 mt-2 px-3" style="box-shadow: 0px 5px 14px 2px rgb(0 0 0 / 50%);">
+                    <h5 id="card-info">objeto -error</h5>
+                    <p>Cuando se produce un error, JavaScript genera un objeto que contiene los detalles al
+                        respecto. El objeto se pasa como argumento para catch:</p>
+                    <img src="../img/try-catch-throw-1.png" alt="" style="max-width: 100%; max-height: 100%;">
+                    <br>
+                    <br>
+                    <p>Para todos los errores integrados, el objeto error tiene dos propiedades principales:</p>
+                    <p><strong>name</strong></p>
+                    <p>Mensaje de texto sobre detalles del error.</p>
+                    <br>
+                    
+                    <p><strong>message</strong></p>
+                    <p>Nombre de error. Por ejemplo, para una variable indefinida que es "ReferenceError".</p>
+
+                    <h5>Ejemplo</h5>
+
+                    <img src="../img/objetoError-1.PNG" alt="" style="max-width: 100%; max-height: 100%;">
+
+                    <form class="row g-2" style="margin-top: 20px; margin-bottom: 20px;">
+
+                        <div class="col-6">
+                            <button id="miBoton" type="submit" class="btn btn-primary mb-3"
+                                onclick="pruebaObjetoError()">Haz
+                                clic aquí</button>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+</main>
+<footer>
+    <!-- place footer here -->
+</footer>
+<!-- Bootstrap JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+
+<script>
+
+    function miFuncionIfElse(product) {
+        var product = document.getElementsByName("prod")[0].value;
+
+        if (product == 10) {
+            alert("¡La función ha sido llamada!");
+        } else {
+            alert("¡La condición no se ha cumplido!");
+
+        }
+    }
+
+
+    function cambiarMensaje() {
+        var pais = document.getElementById("pais").value;
+        var mensaje = "";
+
+        switch (pais) {
+            case "1":
+                mensaje = "¡Hola! Bienvenido/a a España";
+                break;
+            case "2":
+                mensaje = "Bonjour! Bienvenue en France";
+                break;
+            case "3":
+                mensaje = "Ciao! Benvenuto/a in Italia";
+                break;
+            case "4":
+                mensaje = "Hallo! Willkommen in Deutschland";
+                break;
+            case "5":
+                mensaje = "Pura Vida! Bienvenido a Tiquicia";
+                break;
+            default:
+                mensaje = "Selecciona un país para ver el mensaje";
+        }
+
+        document.getElementById("mensaje").innerHTML = mensaje;
+    }
+
+
+
+    function pruebaTry() {
+        try {
+            alert('intenta (try)');
+            if (confirm('¿Cometer un error?')) BAD_CODE();
+        } catch (err) {
+            alert('atrapa (catch)');
+        } finally {
+            alert('finalmente (finally)');
+        }
+    }
+
+    function pruebaObjetoError(){
+        try {
+            lalala; // error, la variable no está definida!
+        } catch (err) {
+            alert(err.name); // ReferenceError
+            alert(err.message); // lalala no está definida!
+            alert(err.stack); // ReferenceError: lalala no está definida en (...call stack)
+
+            // También puede mostrar un error como un todo
+            // El error se convierte en cadena como "nombre: mensaje"
+            alert(err); // ReferenceError: lalala no está definido
+        }
+    }
+
+</script>
+</body>
+
+</html>
