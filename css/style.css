@@ -1,0 +1,11 @@
+body {
+
+    background-color: rgba(172, 173, 164, 0.162);
+}
+
+#card-info {
+
+    border-bottom: 2px solid rgb(37, 36, 36);
+    text-align: center;
+    
+}
