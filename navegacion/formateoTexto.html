@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        #encabezado {
+            max-height: 100px;
+            width: 100%;
+            background: #C4E9E8 url(../img/Javascript.png) repeat-x;
+        }
+
+        #caja img {
+            margin-top: 2%;
+        }
+
+        #caja {
+            box-shadow: 5px rgb(159, 116, 211);
+            border: 3px rgb(207, 196, 196) solid;
+            width: 18rem;
+            min-width: 18rem;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">JavaScript</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+
+                        <!-- Inicio Ejemplos 1 -->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../navegacion/controlFlujo.html">Control
+                                flujo</a>
+                        </li>
+                        <!-- Final Ejemplos 1 -->
+
+                        <!-- Inicio Ejemplos 2 -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../navegacion/bucles.html">Bucles</a>
+                        </li>
+                        <!-- Final Ejemplos 2 -->
+
+                        <!-- Inicio Ejemplos 3 -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../navegacion/funciones.html">Funciones</a>
+                        </li>
+
+                        <!-- Final Ejemplos 3 -->
+
+                        <!-- Inicio Ejemplos 4 -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page"
+                                href="../navegacion/expresiones.html">Expresiones</a>
+                        </li>
+                        <!-- Final Ejemplos 4 -->
+
+                        <!-- Inicio Ejemplos 5 -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../navegacion/numerosFechas.html">Números y
+                                fechas</a>
+                        </li>
+                        <!-- Final Ejemplos 5 -->
+
+                        <!-- Inicio Ejemplos 6 -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../navegacion/formateoTexto.html">
+                                Formateo</a>
+                        </li>
+                        <!-- Final Ejemplos 6 -->
+
+                        <!-- Inicio Ejemplos 7 -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page"
+                                href="../navegacion/colecciones.html">Colecciones</a>
+                        </li>
+                        <!-- Final Ejemplos 7 -->
+
+                        <!-- Inicio Ejemplos 8 -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../navegacion/dom.html">DOM Encontrar</a>
+                        </li>
+                        <!-- Final Ejemplos 8 -->
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container" style="margin-top: 2%; background-color:white;">
+
+
+            <div class="container" style="margin-top: 2%; background-color:white;">
+
+                <div id="inf-1" class="row">
+
+                    <!-- Inicio Control de flujo y manejo de errores -->
+
+                    <h3 class="display-6" style="border-bottom: 2px solid rgb(37, 36, 36); padding-bottom: 10px;">
+                        Formateo de texto</h3>
+
+                    <div id="encabezado" class="col-12">
+                        <img src="../img/Javascript.png" alt="" style="max-width: 100%; max-height: 100%;">
+                    </div>
+                    <div class="col-12">
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#ob-n">Cadenas literales</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#ob-m">Objeto String</a>
+                </li>
+
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane container active " id="ob-n">
+                    <div class="col-12 mt-2 px-3" style="box-shadow: 0px 5px 14px 2px rgb(0 0 0 / 50%);">
+
+                        <h5 id="card-info">Cadenas literales</h5>
+
+                        <p>En JavaScript, las cadenas literales son una forma de crear cadenas de texto de manera más
+                            simple y legible en el código. Las cadenas literales se crean utilizando comillas simples
+                            (') o dobles (") alrededor del texto que se desea incluir en la cadena.</p>
+
+                        <img src="../img/tex-1.png" alt="" style="max-width: 100%; max-height: 100%;">
+                        <br>
+                        <br>
+                        <p>En el primer ejemplo, se crean dos variables que contienen cadenas de texto. Luego, se
+                            utiliza la concatenación de cadenas (mediante el operador +) para crear una nueva cadena que
+                            incluye el nombre completo. En el segundo ejemplo, se utiliza una cadena literal con
+                            interpolación de variables (mediante el uso de la sintaxis ${}) para crear la misma cadena
+                            de una manera más legible.</p>
+                        <br>
+                        <br>
+                        <p>Las cadenas literales también pueden contener caracteres especiales, como saltos de línea
+                            (\n), tabulaciones (\t), comillas (\" o \'), entre otros.</p>
+
+                        <form class="row g-3" style="margin-top: 20px; margin-bottom: 20px;">
+
+                            <div class="col-auto">
+                                <button id="miBoton" type="submit" class="btn btn-primary mb-3"
+                                    onclick="miFuncion1()">Haz
+                                    clic aquí</button>
+                            </div>
+                        </form>
+
+
+                    </div>
+                </div>
+                <!-- _________________________________________________________________ -->
+                <div class="tab-pane container fade" id="ob-m">
+                    <div class="col-12 mt-2 px-3" style="box-shadow: 0px 5px 14px 2px rgb(0 0 0 / 50%);">
+
+                        <h5 id="card-info">Objeto String</h5>
+
+                        <p>En JavaScript, el objeto String es un objeto incorporado que proporciona una serie de métodos
+                            y propiedades útiles para trabajar con cadenas de texto. Los objetos String son inmutables,
+                            lo que significa que una vez que se crea una cadena, no se puede modificar.</p>
+
+                        <h5>Ejemplo</h5>
+
+                        <img src="../img/tex-2.png" alt="" style="max-width: 100%; max-height: 100%;">
+
+                        <br>
+                        <br>
+
+                        <form class="row g-3" style="margin-top: 20px; margin-bottom: 20px;">
+                            <div class="col-auto">
+                                <button id="miBoton" type="submit" class="btn btn-primary mb-3"
+                                    onclick="miFuncion2()">Haz
+                                    clic aquí</button>
+                            </div>
+                        </form>
+                        <br>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <script>
+
+        function miFuncion1() {
+            var firstName = 'Juan';
+            var lastName = "Pérez";
+
+            alert('Mi nombre es ' + firstName + ' ' + lastName + '.');
+            // imprime "Mi nombre es Juan Pérez."
+            alert(`Mi nombre es ${firstName} ${lastName}.`);
+            // también imprime "Mi nombre es Juan Pérez."
+            alert('La longitud de la cadena "Hola, mundo!" es ' + "Hola, mundo!".length + '.');
+            // imprime "La longitud de la cadena "Hola, mundo!" es 12."
+            alert(`La longitud de la cadena "Hola, mundo!" es ${"Hola, mundo!".length}.`);
+            // también imprime "La longitud de la cadena "Hola, mundo!" es 12."
+
+        }
+
+
+        function miFuncion2() {
+            var message = 'Hola, mundo!';
+
+            alert(message.length); // imprime la longitud de la cadena (12)
+            alert(message.toUpperCase()); // imprime la cadena en mayúsculas (HOLA, MUNDO!)
+            alert(message.toLowerCase()); // imprime la cadena en minúsculas (hola, mundo!)
+            alert(message.indexOf('mundo')); // imprime la posición de la subcadena (7)
+            alert(message.charAt(4)); // imprime el carácter en la posición especificada (a)
+            alert(message.substring(0, 5)); // imprime una subcadena de la cadena original (Hola,)
+            alert(message.split(' ')); // divide la cadena en un arreglo de subcadenas (['Hola,', 'mundo!'])
+            alert(message.replace('mundo', 'amigo')); // reemplaza una subcadena con otra (Hola, amigo!)
+
+        }
+
+
+
+        function miFuncion3() {
+
+            var currentDate = new Date();
+
+            alert(currentDate); // imprime la fecha y hora actual
+            alert(currentDate.getFullYear()); // imprime el año actual
+            alert(currentDate.getMonth()); // imprime el mes actual (0 = enero, 11 = diciembre)
+            alert(currentDate.getDate()); // imprime el día del mes actual
+            alert(currentDate.getHours()); // imprime la hora actual
+            alert(currentDate.getMinutes()); // imprime los minutos actuales
+            alert(currentDate.getSeconds()); // imprime los segundos actuales
+            alert(currentDate.getMilliseconds()); // imprime los milisegundos actuales
+            alert(currentDate.getDay()); // imprime el día de la semana actual (0 = domingo, 6 = sábado)
+
+            var christmas = new Date('2022-12-25');
+
+            alert(christmas); // imprime la fecha de Navidad de 2022
+            alert(christmas.getDay()); // imprime el día de la semana de Navidad de 2022
+        }
+
+
+
+    </script>
+</body>
+
+</html>

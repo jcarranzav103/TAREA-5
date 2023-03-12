@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        #encabezado {
+            max-height: 100px;
+            width: 100%;
+            background: #C4E9E8 url(../img/Javascript.png) repeat-x;
+        }
+
+        #caja img {
+            margin-top: 2%;
+        }
+
+        #caja {
+            box-shadow: 5px rgb(159, 116, 211);
+            border: 3px rgb(207, 196, 196) solid;
+            width: 18rem;
+            min-width: 18rem;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">JavaScript</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+
+                        <!-- Inicio Ejemplos 1 -->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../navegacion/controlFlujo.html">Control
+                                flujo</a>
+                        </li>
+                        <!-- Final Ejemplos 1 -->
+
+                        <!-- Inicio Ejemplos 2 -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../navegacion/bucles.html">Bucles</a>
+                        </li>
+                        <!-- Final Ejemplos 2 -->
+
+                        <!-- Inicio Ejemplos 3 -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../navegacion/funciones.html">Funciones</a>
+                        </li>
+
+                        <!-- Final Ejemplos 3 -->
+
+                        <!-- Inicio Ejemplos 4 -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page"
+                                href="../navegacion/expresiones.html">Expresiones</a>
+                        </li>
+                        <!-- Final Ejemplos 4 -->
+
+                        <!-- Inicio Ejemplos 5 -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../navegacion/numerosFechas.html">Números y
+                                fechas</a>
+                        </li>
+                        <!-- Final Ejemplos 5 -->
+
+                        <!-- Inicio Ejemplos 6 -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../navegacion/formateoTexto.html">
+                                Formateo</a>
+                        </li>
+                        <!-- Final Ejemplos 6 -->
+
+                        <!-- Inicio Ejemplos 7 -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page"
+                                href="../navegacion/colecciones.html">Colecciones</a>
+                        </li>
+                        <!-- Final Ejemplos 7 -->
+
+                        <!-- Inicio Ejemplos 8 -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../navegacion/dom.html">DOM Encontrar</a>
+                        </li>
+                        <!-- Final Ejemplos 8 -->
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container" style="margin-top: 2%; background-color:white;">
+
+
+            <div class="container" style="margin-top: 2%; background-color:white;">
+
+                <div id="inf-1" class="row">
+
+                    <!-- Inicio Control de flujo y manejo de errores -->
+
+                    <h3 class="display-6" style="border-bottom: 2px solid rgb(37, 36, 36); padding-bottom: 10px;">
+                        Colecciones indexadas</h3>
+
+                    <div id="encabezado" class="col-12">
+                        <img src="../img/Javascript.png" alt="" style="max-width: 100%; max-height: 100%;">
+                    </div>
+                    <div class="col-12">
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#arreglos">Arreglos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#arreglos-t">Arreglos tipados</a>
+                </li>
+
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane container active " id="arreglos">
+                    <div class="col-12 mt-2 px-3" style="box-shadow: 0px 5px 14px 2px rgb(0 0 0 / 50%);">
+
+                        <h5 id="card-info">Arreglos</h5>
+
+                        <p>En JavaScript, un arreglo es una estructura de datos que nos permite almacenar y acceder a
+                            múltiples valores a través de un solo identificador. Los arreglos en JavaScript son objetos
+                            indexados por números enteros, y cada elemento del arreglo puede ser cualquier tipo de dato,
+                            como números, cadenas, objetos, funciones, etc.</p>
+
+                        <p>Para crear un arreglo en JavaScript, podemos utilizar la siguiente sintaxis:</p>
+
+                        <img src="../img/arr-1.png" alt="" style="max-width: 100%; max-height: 100%;">
+                        <br>
+                        <p>Donde valor1, valor2, valor3, etc. son los valores que queremos almacenar en el arreglo.
+                            También podemos crear un arreglo vacío y luego agregar elementos al mismo utilizando el
+                            método push():</p>
+
+                        <img src="../img/arr-2.png" alt="" style="max-width: 100%; max-height: 100%;">
+
+                        <p>Podemos acceder a los elementos de un arreglo utilizando su índice numérico, comenzando por
+                            el índice 0 para el primer elemento. Por ejemplo:</p>
+
+                        <img src="../img/arr-3.png" alt="" style="max-width: 100%; max-height: 100%;">
+
+                        <br><br>
+                        <p>Los arreglos en JavaScript también proporcionan una serie de métodos útiles para manipular
+                            los elementos del arreglo, como push(), pop(), shift(), unshift(), splice(), concat(),
+                            join(), slice(), reverse(), sort(), entre otros.</p>
+
+                        <form class="row g-3" style="margin-top: 20px; margin-bottom: 20px;">
+
+                            <div class="col-auto">
+                                <button id="miBoton" type="submit" class="btn btn-primary mb-3"
+                                    onclick="miFuncion1()">Haz
+                                    clic aquí</button>
+                            </div>
+                        </form>
+
+
+                    </div>
+                </div>
+                <!-- _________________________________________________________________ -->
+                <div class="tab-pane container fade" id="arreglos-t">
+                    <div class="col-12 mt-2 px-3" style="box-shadow: 0px 5px 14px 2px rgb(0 0 0 / 50%);">
+
+                        <h5 id="card-info">Arreglos tipados</h5>
+
+                        <p>Los arreglos tipados en JavaScript son una característica que se introdujo en ECMAScript 6
+                            para permitir la manipulación eficiente de datos binarios en el navegador y en el servidor.
+                            A diferencia de los arreglos regulares en JavaScript, que pueden contener cualquier tipo de
+                            datos, los arreglos tipados se limitan a un solo tipo de datos y proporcionan acceso a los
+                            bytes subyacentes del arreglo, lo que permite la manipulación directa de datos binarios.</p>
+
+                        <p>Los arreglos tipados disponibles en JavaScript son:</p>
+
+                        <ul>
+                            <li>Int8Array: Almacena enteros de 8 bits con signo</li>
+                            <li>Uint8Array: Almacena enteros de 8 bits sin signo</li>
+                            <li>Uint8ClampedArray: Almacena enteros de 8 bits sin signo con límite</li>
+                            <li>Int16Array: Almacena enteros de 16 bits con signo</li>
+                            <li>Uint16Array: Almacena enteros de 16 bits sin signo</li>
+                            <li>Int32Array: Almacena enteros de 32 bits con signo</li>
+                            <li>Uint32Array: Almacena enteros de 32 bits sin signo</li>
+                            <li>Float32Array: Almacena números de punto flotante de 32 bits</li>
+                            <li>Float64Array: Almacena números de punto flotante de 64 bits</li>
+                            <li>BigInt64Array: Almacena enteros de 64 bits con signo</li>
+                            <li>BigUint64Array: Almacena enteros de 64 bits sin signo</li>
+                        </ul>
+
+                        <p>Para crear un arreglo tipado, podemos utilizar el constructor correspondiente y especificar
+                            el tamaño del arreglo como un parámetro. Por ejemplo, para crear un arreglo tipado
+                            Uint8Array de 4 elementos, podemos hacer lo siguiente:</p>
+
+                        <img src="../img/arr-4.png" alt="" style="max-width: 100%; max-height: 100%;">
+
+                        <br>
+                        <br>
+
+                        <p>También podemos inicializar el arreglo con valores iniciales utilizando un arreglo regular
+                            como argumento del constructor. Por ejemplo:
+                        </p>
+
+                        <img src="../img/arr-5.png" alt="" style="max-width: 100%; max-height: 100%;">
+
+                        <p>Aquí hay un ejemplo de cómo podemos usar un arreglo tipado en JavaScript:</p>
+                        <img src="../img/arr-6.png" alt="" style="max-width: 100%; max-height: 100%;">
+
+                        <form class="row g-3" style="margin-top: 20px; margin-bottom: 20px;">
+                            <div class="col-auto">
+                                <button id="miBoton" type="submit" class="btn btn-primary mb-3"
+                                    onclick="miFuncion2()">Haz
+                                    clic aquí</button>
+                            </div>
+                        </form>
+                        <br>
+
+
+                    </div>
+                </div>
+                <!-- _________________________________________________________________ -->
+
+
+
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <script>
+
+        function miFuncion1() {
+
+            const myArray = ["Hola", "Mundo", "!"];
+            alert(myArray[0]); // "Hola"
+            alert(myArray[1]); // "Mundo"
+            alert(myArray[2]); // "!"
+
+        }
+
+
+        function miFuncion2() {
+            // Creamos un arreglo tipado Float32Array de 3 elementos
+            const arr = new Float32Array([1.2, 3.4, 5.6]);
+
+            // Accedemos a los elementos del arreglo utilizando el método get()
+            alert(arr.get(0)); // 1.2
+            alert(arr.get(1)); // 3.4
+            alert(arr.get(2)); // 5.6
+
+            // Modificamos un elemento del arreglo utilizando el método set()
+            arr.set(1, 2.3);
+            alert(arr.get(1)); // 2.3
+
+            // Creamos un nuevo arreglo tipado utilizando el método slice()
+            const newArr = arr.slice(1, 3);
+            alert(newArr); // Float32Array [2.3, 5.6]
+
+            // Creamos un nuevo arreglo tipado utilizando el método subarray()
+            const subArr = arr.subarray(0, 2);
+            alert(subArr); // Float32Array [1.2, 2.3]
+
+            // Accedemos a los bytes subyacentes del arreglo utilizando las propiedades byteLength y byteOffset
+            alert(arr.byteLength); // 12 (3 elementos x 4 bytes por elemento)
+            alert(arr.byteOffset); // 0
+
+            // Modificamos los bytes subyacentes del arreglo directamente
+            const buffer = arr.buffer;
+            const uint8Arr = new Uint8Array(buffer);
+            uint8Arr[4] = 0xFF;
+            alert(arr); // Float32Array [1.2, NaN, 5.6]
+
+        }
+
+
+
+        function miFuncion3() {
+
+            let i = 1;
+            do {
+                alert(i);
+                i++;
+            } while (i <= 5);
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>
