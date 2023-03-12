@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        #encabezado {
+            max-height: 100px;
+            width: 100%;
+            background: #C4E9E8 url(../img/Javascript.png) repeat-x;
+        }
+
+        #caja img {
+            margin-top: 2%;
+        }
+
+        #caja {
+            box-shadow: 5px rgb(159, 116, 211);
+            border: 3px rgb(207, 196, 196) solid;
+            width: 18rem;
+            min-width: 18rem;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">JavaScript</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+
+                        <!-- Inicio Ejemplos 1 -->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../navegacion/controlFlujo.html">Control
+                                flujo</a>
+                        </li>
+                        <!-- Final Ejemplos 1 -->
+
+                        <!-- Inicio Ejemplos 2 -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../navegacion/bucles.html">Bucles</a>
+                        </li>
+                        <!-- Final Ejemplos 2 -->
+
+                        <!-- Inicio Ejemplos 3 -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../navegacion/funciones.html">Funciones</a>
+                        </li>
+
+                        <!-- Final Ejemplos 3 -->
+
+                        <!-- Inicio Ejemplos 4 -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page"
+                                href="../navegacion/expresiones.html">Expresiones</a>
+                        </li>
+                        <!-- Final Ejemplos 4 -->
+
+                        <!-- Inicio Ejemplos 5 -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../navegacion/numerosFechas.html">Números y
+                                fechas</a>
+                        </li>
+                        <!-- Final Ejemplos 5 -->
+
+                        <!-- Inicio Ejemplos 6 -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../navegacion/formateoTexto.html">
+                                Formateo</a>
+                        </li>
+                        <!-- Final Ejemplos 6 -->
+
+                        <!-- Inicio Ejemplos 7 -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page"
+                                href="../navegacion/colecciones.html">Colecciones</a>
+                        </li>
+                        <!-- Final Ejemplos 7 -->
+
+                        <!-- Inicio Ejemplos 8 -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../navegacion/dom.html">DOM Encontrar</a>
+                        </li>
+                        <!-- Final Ejemplos 8 -->
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container" style="margin-top: 2%; background-color:white;">
+
+
+            <div class="container" style="margin-top: 2%; background-color:white;">
+
+                <div id="inf-1" class="row">
+
+                    <!-- Inicio Control de flujo y manejo de errores -->
+
+                    <h3 class="display-6" style="border-bottom: 2px solid rgb(37, 36, 36); padding-bottom: 10px;">
+                        Expresiones y operadores</h3>
+
+                    <div id="encabezado" class="col-12">
+                        <img src="../img/Javascript.png" alt="" style="max-width: 100%; max-height: 100%;">
+                    </div>
+                    <div class="col-12">
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#operadores-a">Operadores aritméticos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#operadores-l">Operadores lógicos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#asignacion">Asignación y Comparación</a>
+                </li>
+
+
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane container active " id="operadores-a">
+                    <div class="col-12 mt-2 px-3" style="box-shadow: 0px 5px 14px 2px rgb(0 0 0 / 50%);">
+
+                        <h5 id="card-info">Operadores aritméticos</h5>
+
+                        <p>JavaScript tiene una gran variedad de expresiones y operadores que se pueden utilizar para
+                            realizar operaciones aritméticas, comparaciones, asignaciones y más. Algunos de los
+                            operadores y expresiones más comunes incluyen:</p>
+
+                        <p>Operadores aritméticos: + (suma), - (resta), * (multiplicación), / (división), % (módulo), ++
+                            (incremento), -- (decremento).</p>
+
+                        <img src="../img/op-1.png" alt="" style="max-width: 100%; max-height: 100%;">
+                        <br>
+                        <p>Aquí hay un ejemplo de cómo se pueden utilizar los operadores aritméticos en JavaScript para
+                            realizar cálculos:</p>
+
+                        <img src="../img/op-2.png" alt="" style="max-width: 100%; max-height: 100%;">
+
+
+
+                        <form class="row g-3" style="margin-top: 20px; margin-bottom: 20px;">
+
+                            <div class="col-auto">
+                                <button id="miBoton" type="submit" class="btn btn-primary mb-3"
+                                    onclick="miFuncion1()">Haz
+                                    clic aquí</button>
+                            </div>
+                        </form>
+
+
+                    </div>
+                </div>
+                <!-- _________________________________________________________________ -->
+                <div class="tab-pane container fade" id="operadores-l">
+                    <div class="col-12 mt-2 px-3" style="box-shadow: 0px 5px 14px 2px rgb(0 0 0 / 50%);">
+
+                        <h5 id="card-info">Operadores lógicos</h5>
+
+                        <p>Operadores lógicos: && (y), || (o), ! (no).</p>
+                        <h5>Ejemplo</h5>
+                        <img src="../img/op-3.png" alt="" style="max-width: 100%; max-height: 100%;">
+
+                        <br>
+                        <br>
+
+                        <p>Aquí hay un ejemplo de cómo se pueden utilizar los operadores lógicos en JavaScript:
+                        </p>
+
+                        <img src="../img/op-4.png" alt="" style="max-width: 100%; max-height: 100%;">
+
+                        <form class="row g-3" style="margin-top: 20px; margin-bottom: 20px;">
+                            <div class="form-floating mb-3">
+                                <input name="prod" type="number" class="form-control" id="edad" placeholder="valor">
+                                <label for="floatingInput">Ingresa la edad</label>
+                            </div>
+                            <div class="col-auto">
+                                <button id="miBoton" type="submit" class="btn btn-primary mb-3"
+                                    onclick="miFuncion2(25)">Haz
+                                    clic aquí</button>
+                            </div>
+                        </form>
+                        <br>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- _________________________________________________________________ -->
+            <div class="tab-pane container fade" id="asignacion">
+                <div class="col-12 mt-2 px-3" style="box-shadow: 0px 5px 14px 2px rgb(0 0 0 / 50%);">
+
+                    <h5 id="card-info">Asignación y Comparación</h5>
+
+                    <p><strong>Expresiones de asignación:</strong> = (asignación), += (suma y asignación), -= (resta y
+                        asignación), *=
+                        (multiplicación y asignación), /= (división y asignación), %= (módulo y asignación).</p>
+                    <h5>Ejemplo</h5>
+                    <img src="../img/op-5.png" alt="" style="max-width: 100%; max-height: 100%;">
+
+                    <br>
+                    <br>
+                    <p><strong>Operadores de comparación:</strong> == (igualdad), === (igualdad estricta), !=
+                        (desigualdad), !==
+                        (desigualdad estricta), > (mayor que), < (menor que),>= (mayor o igual que), <= (menor o igual
+                                que).</p>
+                                <br>
+                                <img src="../img/op-6.png" alt="" style="max-width: 100%; max-height: 100%;">
+
+                              
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <script>
+
+        function miFuncion1() {
+            var x = 10;
+            var y = 5;
+
+            var suma = x + y; // suma es igual a 15
+            var resta = x - y; // resta es igual a 5
+            var multiplicacion = x * y; // multiplicacion es igual a 50
+            var division = x / y; // division es igual a 2
+            var modulo = x % y; // modulo es igual a 0
+
+            var resultado = (((suma * resta) / multiplicacion) + division);
+
+            alert(resultado)
+        }
+
+
+        function miFuncion2(edad) {
+            var edad = document.getElementById("edad").value;
+
+            var esMayorDeEdad = true;
+            var tieneLicencia = false;
+
+            if (edad >= 18 && esMayorDeEdad) {
+                alert("La persona es mayor de edad.");
+            } else {
+                alert("La persona es menor de edad.");
+            }
+
+            if (tieneLicencia || edad >= 18) {
+                alert("La persona puede conducir.");
+            } else {
+                alert("La persona no puede conducir.");
+            }
+
+        }
+
+
+
+        function miFuncion3() {
+
+            let i = 1;
+            do {
+                alert(i);
+                i++;
+            } while (i <= 5);
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>
